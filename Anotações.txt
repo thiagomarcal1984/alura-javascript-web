@@ -1,0 +1,10 @@
+A função alert no JavaScript tem escopo global.
+
+Já a função querySelector é um método do objeto document.
+
+O método querySelector busca um elemento no documento a partir de um seletor:
+    tag => seletor de tag (sem caracter prévio).
+    .nome_da_classe => seletor de classe (ponto prévio).
+    #id_do_objeto => seletor de classe (cerquilha prévia).
+
+JavaScript é case sensitive.
