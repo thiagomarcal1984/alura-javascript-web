@@ -32,3 +32,9 @@ O correto é atribuir somente a função, não o retorno dela:
 O método document.querySelector busca apenas o primeiro elemento encontrado 
 pelo seletor. Temos o método document.querySelectorAll para selecionar todos
 os elementos que contenham esse seletor.
+
+Para declarar constantes em JavaScript, usamos:
+    const constante = valor;
+
+Com constantes é possível obter elementos sem repetir códigos longos (como o 
+do querySelector ou querySelectorAll).
