@@ -10,3 +10,10 @@ O método querySelector busca um elemento no documento a partir de um seletor:
         (Ex.: input[type=password] busca campos de senha.)
 
 JavaScript é case sensitive.
+
+Para que o som seja tocado, é necessário que os objetos esperados pelo main.js
+sejam carregados primeiro. Por isso, a tag script precisa ir para o fim do
+body do HTML.
+
+Os navegadores não permitem execução de mídia sem que o usuário tenha 
+interagido com a página. Por isso o play automático não funciona.
