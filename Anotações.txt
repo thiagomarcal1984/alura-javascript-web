@@ -28,3 +28,7 @@ código é executado, não atribuído a onclick.
 
 O correto é atribuir somente a função, não o retorno dela:
     document.querySelector('.tecla_pom').onclick=tocaSomPom; //Sem parênteses.
+
+O método document.querySelector busca apenas o primeiro elemento encontrado 
+pelo seletor. Temos o método document.querySelectorAll para selecionar todos
+os elementos que contenham esse seletor.
