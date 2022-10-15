@@ -6,5 +6,7 @@ O método querySelector busca um elemento no documento a partir de um seletor:
     tag => seletor de tag (sem caracter prévio).
     .nome_da_classe => seletor de classe (ponto prévio).
     #id_do_objeto => seletor de classe (cerquilha prévia).
+    tag[propriedade=valor_propriedade] => seletor de tag por propriedade.
+        (Ex.: input[type=password] busca campos de senha.)
 
 JavaScript é case sensitive.
