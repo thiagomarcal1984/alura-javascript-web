@@ -17,3 +17,14 @@ body do HTML.
 
 Os navegadores não permitem execução de mídia sem que o usuário tenha 
 interagido com a página. Por isso o play automático não funciona.
+
+No JavaScript, onclick é um atributo das tags, então elas recebem atribuição.
+
+O código abaixo tem um problema:
+    document.querySelector('.tecla_pom').onclick=tocaSomPom();
+
+A função tocaSomPom() não tem retorno para atribuir a onclick. Por isso, o
+código é executado, não atribuído a onclick.
+
+O correto é atribuir somente a função, não o retorno dela:
+    document.querySelector('.tecla_pom').onclick=tocaSomPom; //Sem parênteses.
