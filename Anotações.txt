@@ -38,3 +38,6 @@ Para declarar constantes em JavaScript, usamos:
 
 Com constantes é possível obter elementos sem repetir códigos longos (como o 
 do querySelector ou querySelectorAll).
+
+Declarações de variáveis em JavaScript se faz com a palavra reservada let:
+    let variavel = valor;
