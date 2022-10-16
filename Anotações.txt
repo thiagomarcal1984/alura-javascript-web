@@ -45,3 +45,13 @@ Declarações de variáveis em JavaScript se faz com a palavra reservada let:
 O loop com while está inserindo a nova função tocaSom em todos os botões. A
 função tocaSom funciona bem, se você for usá-la nas Dev Tools do browser.
 Falta agora definir como os parâmetros serão fornecidos para cada botão.
+
+Chamar a função da forma abaixo tem um problema: 
+    listaDeTeclas[contador].onclick = tocaSom("#som_tecla_psh");
+
+A função de tocarSom é executada sem dar retorno que seria atribuído ao botão.
+Para atribuir uma função com parâmetros, use uma função anônima, assim:
+
+    listaDeTeclas[contador].onclick = function () {
+        tocaSom("#som_tecla_psh")
+    };
