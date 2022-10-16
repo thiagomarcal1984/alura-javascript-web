@@ -105,3 +105,14 @@ Há diferentes strings que caracterizam um elemento (exemplo para um button):
     tagName         'BUTTON' (em maiúsculo)
     nodeName        'BUTTON' (em maiúsculo)
     localName       'button' (em minúsculo)
+
+Em um if, colocar apenas a variável na condição é uma forma de testar sua 
+existência: se for nula, retorna falso, senão retorna true. Os códigos abaixo
+são equivalentes:
+    if (elemento != null) {
+        elemento.play();
+    } 
+
+    if (elemento) {
+        elemento.play();
+    } 
