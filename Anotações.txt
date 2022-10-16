@@ -72,3 +72,20 @@ Como capturar o valor da tecla pressionada:
             tecla.classList.add('ativa');
         }
     }
+
+Os eventos de teclado podem ter dois parâmetros usáveis para a lógica no 
+JavaScript: key ou code. Por exemplo: ao apertar a barra de espaço, o valor
+de key é ' ', enquanto o valor de code é 'Space'. Exemplos:
+    Code            Key
+    'Space'         ' '
+    'KeyA'          'a'
+    'KeyA'          'A'
+    'AltLeft'       'Alt'
+    'ControlRight'  'Control'
+    'Digit9'        '9'
+
+Comparadores de igualdade em JavaScript:
+    1 == '1'; // Retorna true, a string pode ser convertida para o inteiro 1.
+    1 === '1'; // Retorna false, o tipo inteiro é diferente do tipo string.
+
+O operador "duplo-igual" é menos seguro para comparações que o "triplo-igual".
