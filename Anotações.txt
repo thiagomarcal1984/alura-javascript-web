@@ -89,3 +89,19 @@ Comparadores de igualdade em JavaScript:
     1 === '1'; // Retorna false, o tipo inteiro é diferente do tipo string.
 
 O operador "duplo-igual" é menos seguro para comparações que o "triplo-igual".
+
+O Firefox permite melhor inspeção dos elementos do que o Google Chrome. Por 
+exemplo, se você fizer o código abaixo: 
+    I: elemento = document.querySelector('button');
+    O: <button class=​"tecla tecla_pom">​Pom​</button>​
+
+    I: elemento
+    O: <button class=​"tecla tecla_pom">​Pom​</button>​
+
+A saída não permitirá a inspeção (expandir o elemento e ver suas propriedades).
+
+Há diferentes strings que caracterizam um elemento (exemplo para um button): 
+    propriedade     valor
+    tagName         'BUTTON' (em maiúsculo)
+    nodeName        'BUTTON' (em maiúsculo)
+    localName       'button' (em minúsculo)
