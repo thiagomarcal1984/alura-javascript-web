@@ -65,3 +65,10 @@ Cada variável referenciada na notação de crase precisa de estar no formato
 
 Um problema ao adicionar a classe 'ativa': qualquer tecla usada acrescenta a 
 classe 'ativa' ao botão.
+
+Como capturar o valor da tecla pressionada: 
+    tecla.onkeydown = function(evento) {
+        if (evento.code === "Enter" || evento.code === "Space") {
+            tecla.classList.add('ativa');
+        }
+    }

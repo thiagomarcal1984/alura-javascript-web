@@ -53,3 +53,7 @@ input[type=tel] {
   text-align: center;
   width: 280px;
 }
+
+.ativa {
+  background-color: yellow;
+}
