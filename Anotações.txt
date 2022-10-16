@@ -55,3 +55,10 @@ Para atribuir uma função com parâmetros, use uma função anônima, assim:
     listaDeTeclas[contador].onclick = function () {
         tocaSom("#som_tecla_psh")
     };
+
+Usar a notação de crase (`) para strings permite inserir variáveis dentro da
+string (igual às f-strings do Python). Essa notação se chama template string:
+    const idAudio = `#som_${instrumento}`;
+
+Cada variável referenciada na notação de crase precisa de estar no formato
+`texto_estatico${variável}texto_estatico` (perceba o  texto ${variavel}).

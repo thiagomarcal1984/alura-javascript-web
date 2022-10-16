@@ -11,9 +11,14 @@ const listaDeTeclas = document.querySelectorAll('.tecla');
 let contador = 0;
 
 while(contador < listaDeTeclas.length) {
-    listaDeTeclas[contador].onclick = function () {
-        tocaSom("#som_tecla_psh")
-    };
+    const tecla = listaDeTeclas[contador];
+    const instrumento = tecla.classList[1];
+    
+    // Template String
+    const idAudio = `#som_${instrumento}`;
+
+    tecla.onclick = function () {
+        tocaSom(idAudio);
+    }
     contador++;
-    console.log(contador);
 }
