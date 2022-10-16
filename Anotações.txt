@@ -41,3 +41,7 @@ do querySelector ou querySelectorAll).
 
 Declarações de variáveis em JavaScript se faz com a palavra reservada let:
     let variavel = valor;
+
+O loop com while está inserindo a nova função tocaSom em todos os botões. A
+função tocaSom funciona bem, se você for usá-la nas Dev Tools do browser.
+Falta agora definir como os parâmetros serão fornecidos para cada botão.
