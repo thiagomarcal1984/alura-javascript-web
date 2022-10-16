@@ -62,3 +62,6 @@ string (igual às f-strings do Python). Essa notação se chama template string:
 
 Cada variável referenciada na notação de crase precisa de estar no formato
 `texto_estatico${variável}texto_estatico` (perceba o  texto ${variavel}).
+
+Um problema ao adicionar a classe 'ativa': qualquer tecla usada acrescenta a 
+classe 'ativa' ao botão.
